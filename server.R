@@ -5,7 +5,7 @@ shinyServer(function(input, output) {
   model <- lm(faithful)
   
   # Plot.
-  output$distPlot <- renderPlot({
+  output$plot <- renderPlot({
     wait       <- input$wait
     showguides <- input$showguides
     showfit    <- input$showfit
